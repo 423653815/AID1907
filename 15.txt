@@ -1,0 +1,63 @@
+﻿review
+1.mysql数据库
+    * 基础概念
+        什么是数据库
+        为什么用数据库
+        数据库分类
+    * 关系型数据库
+        数据元素 -> 记录 -> 数据表 -> 数据库
+        数据库 : database
+        数据表 : table
+        字段 : column
+        记录 : row
+        主键 : primary key
+2.SQL struct query language
+    * 数据库操作
+        show databases;
+        create database [db_name];
+        select database();
+        use [db]
+        show create database [db]
+        drop database [db]
+    * 数据表
+        show tables;
+        create table [tb_name] (column1 type,...)
+            字段约束
+                primary key
+                auto_increment
+                not null
+                default [val]
+                unsigned
+            数据类型
+                数字(整数,小数,布尔)
+                字符串(char varchar blob text enum set)
+                时间日期
+        desc [tb]
+        show create table [tb]
+        drop table [tb]
+    *增删改查
+        insert into [tb] [col,col...] values (val1,val2),...;
+        delete from [tb] where...;
+        update [tb] set ... where ...;
+        select [col...] from [tb] where ...;
+        where 子句
+            算数 逻辑 比较 位运算
+    * 表结构修改
+        alter table [tb] add
+                         drop
+                         modify
+                         change
+                         rename
+
+练习1
+    ...
+
+文件的存储
+    * 存储文件路径(占用空间少,读写效率高)
+    * 将文件存储到数据库(文件随数据库保存)
+
+练习3
+    编写一个程序,模拟用户注册,登录的数据库行为
+    * 用户名不能重复
+    * 要包含用户名和密码字段
+    
